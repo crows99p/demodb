@@ -1,0 +1,16 @@
+---
+applications:
+- name: spring-demo
+  health-check-type: http
+  health-check-http-endpoint: /api/alive
+　timeout: 120
+  instances 2
+  memory: 1024M
+  path: app.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  env:
+    DATASOURCE_URL: jdbc://<hostname>:<port>/<dbname>
+    DATASOURCE_USER: postgres
+    DATASOURCE_PASSWORD: password
+  services:
+    - dynatrace-service

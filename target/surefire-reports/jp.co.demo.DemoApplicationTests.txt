@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: jp.co.demo.DemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.02 s - in jp.co.demo.DemoApplicationTests
